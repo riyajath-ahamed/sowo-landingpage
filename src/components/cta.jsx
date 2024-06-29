@@ -1,5 +1,5 @@
 import React from "react";
-import eventallImage from '../assets/eventall.png';
+
 import { ChatBubbleLeftRightIcon, ArrowTrendingUpIcon ,UserIcon, UsersIcon ,RocketLaunchIcon } from '@heroicons/react/20/solid'
 
 const features = [

@@ -2,29 +2,28 @@ import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from '../assets/logo.png';
 
 const navigation = [
-  { name: "About Us", href: "/cta" },
-  { name: "Events", href: "#" },
-  { name: "Projects", href: "#" },
+  { name: "About Us", href: "" },
+  { name: "Services", href: "about" },
+  { name: "Values", href: "values" },
   { name: "Blog", href: "#" },
 ];
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="fixed inset-x-0 top-0 z-50">
       <nav
         className="flex items-center justify-between bg-cardOverlay p-2 mt-4 rounded-full lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5" onClick={() => window.scroll(0.0)}>
             <span className="sr-only">SOWO</span>
             <span className="h-8 text-4xl font-semibold bg-gradient-to-r from-orange-600 to-amber-400 rounded-l-full w-auto pl-3">SO</span>
             <span className="h-8 text-4xl font-semibold text-black w-auto">WO</span>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -39,10 +38,10 @@ const Navbar = () => {
         <ul className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <li
-              key={item.name}
+              key={item.href}
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              <Link to={item.href}>{item.name}</Link>
+              <Link to={`/${item.href}`}>{item.name}</Link>
             </li>
           ))}
         </ul>
