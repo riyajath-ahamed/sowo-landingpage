@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <nav
-        className="flex items-center justify-between bg-cardOverlay p-2 mt-4 rounded-full lg:px-8"
+        className="flex items-center justify-between bg-cardOverlay backdrop-blur-lg p-2 mt-4 rounded-full lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
