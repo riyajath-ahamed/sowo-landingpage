@@ -29,7 +29,7 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="bg-transparent py-24 sm:py-32">
+    <div id='services' className="bg-transparent py-24 sm:py-32">
         <div
           className="absolute inset-x-0 top-[30rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[35rem]"
           aria-hidden="true"

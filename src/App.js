@@ -4,13 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-white">
-
-      <Routes>
-      <Route path="/about" element={<Services />} />
-      <Route path="/values" element={<Cta />} />
-      </Routes>
-      
+    <div className="bg-white">      
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"

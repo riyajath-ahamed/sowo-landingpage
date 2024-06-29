@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "About Us", href: "" },
-  { name: "Services", href: "about" },
+  { name: "About Us", href: "about" },
+  { name: "Services", href: "services" },
   { name: "Values", href: "values" },
   { name: "Blog", href: "#" },
 ];
@@ -19,11 +19,11 @@ const Navbar = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5" onClick={() => window.scroll(0.0)}>
+          <a href="#" className="-m-1.5 p-1.5" >
             <span className="sr-only">SOWO</span>
             <span className="h-8 text-4xl font-semibold bg-gradient-to-r from-orange-600 to-amber-400 rounded-l-full w-auto pl-3">SO</span>
             <span className="h-8 text-4xl font-semibold text-black w-auto">WO</span>
-          </Link>
+          </a>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -41,7 +41,7 @@ const Navbar = () => {
               key={item.href}
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              <Link to={`/${item.href}`}>{item.name}</Link>
+              <a href={`#${item.href}`} preventScrollReset={true}>{item.name}</a>
             </li>
           ))}
         </ul>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 {navigation.map((item) => (
                   <a
                     key={item.name}
-                    href={item.href}
+                    href={`#${item.href}`}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
