@@ -12,7 +12,7 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
-        cardOverlay: "rgba(255,255,255,0.2)",
+        cardOverlay: "rgba(255,255,255,0.5)",
         cardTrans: "rgba(255,255,255,0.5)",
       },
     },
