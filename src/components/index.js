@@ -3,3 +3,4 @@ export {default as Navbar} from './navbar';
 export {default as Cta} from './cta';
 export {default as Services} from './services';
 export {default as Footer} from './footer';
+export {default as Vision} from './vision';

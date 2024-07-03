@@ -48,9 +48,11 @@ export default function Services() {
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Services Offered
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          <p className="mt-6 text-lg leading-7 text-gray-600">
+          SOWO empowers individuals and communities in Sri Lanka through educational programs, vocational training, 
+          healthcare initiatives, and financial assistance. We offer counseling, career guidance, and community 
+          development projects, focusing on women's empowerment, child welfare, and support for the elderly, ensuring 
+          all segments of society thrive and contribute to a "Happy Sri Lanka."
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

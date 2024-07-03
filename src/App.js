@@ -1,5 +1,5 @@
 import React from "react";
-import { Cta, Footer, Landing, Navbar, Services } from "./components";
+import { Cta, Footer, Landing, Navbar, Services, Vision } from "./components";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
 
         <Navbar />
         <Landing />
+        <Vision/>
         <Services/>
         <Cta/>
         <Footer/>
